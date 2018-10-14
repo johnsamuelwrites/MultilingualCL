@@ -1,7 +1,32 @@
 import json
 
+# alias in different languages 
 alias={}
 alias["en_US"] = "alias"
+
+# option in different languages 
+option={}
+option["en_US"] = "option"
+
+# argument in different languages 
+argument={}
+argument["en_US"] = "argument"
+
+# positional argument in different languages 
+positionalargument={}
+positionalargument["en_US"] = "positional argument"
+
+# short form in different languages 
+shortform={}
+shortform["en_US"] = "short form"
+
+# long form in different languages 
+longform={}
+longform["en_US"] = "long form"
+
+# documentation in different languages 
+documentation={}
+documentation["en_US"] = "documentation"
 
 # resources and their labels in different languages
 user_label = {}
@@ -31,8 +56,6 @@ directory_label["en_US"] = ["directory"]
 date_label = {}
 date_label["en_US"] = ["date"]
 
-option={}
-option["en_US"] = "option"
 
 command = {}
 command["en_US"] = {}
