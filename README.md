@@ -1,6 +1,10 @@
 # MultilingualCL
 Multilingual command line
 
+## Documentation
+A detailed documentation is available [here](docs/README.md).
+
+
 # Author
 * John Samuel
 
