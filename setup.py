@@ -29,6 +29,7 @@ setuptools.setup(
     ],
     install_requires=[
         'Markdown>=3.2.2',
+        'pyyaml>=5.3.1',
     ],
     python_requires='>=3.6',
 )
