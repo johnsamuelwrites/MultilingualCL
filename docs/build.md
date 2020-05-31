@@ -2,21 +2,24 @@
 ## Building Documentation
 
 Run the following command to first install the necessary packages for the generation of documentation. `sphinx` is used for managing the documentation.
-``
+
+```
 $ pip install -r requirements.txt
-``
+```
 
 Once all the necessary packages are installed, run the following command.
-``
+
+```
 $ sphinx-build -b html docs/ build/html
-``
+```
 
 The HTML documentation is available in `build/html/` folder.
 
 Some documentation is also in `markdown` format and can be converted to `restructuredText` in the following way.
-``
+
+```
 pandoc --from=markdown --to=rst --output=README.rst README.md
-``
+```
 
 Check documentation [here](docs.md).
 
@@ -24,19 +27,21 @@ Check documentation [here](docs.md).
 ### Building Templates
 For generating documentation, `sphinx` is used.  In order to obtain the basic templates of `multilingualcl` documentation, run the following command.
 
-``
+```
 sphinx-apidoc -o docs multilingualcl/
-``
+```
 
 This will generate the following documentation files.
-``
+
+```
 Creating file docs/multilingualcl.rst.
 Creating file docs/modules.rst.
-``
+```
 
 Now, in order to generate the configuration for generating documentation by `sphinx`, the next step is to use `sphinx-quickstart`.
 
-``
+
+```
 $ sphinx-quickstart
 
 Welcome to the Sphinx 3.0.4 quickstart utility.
@@ -76,13 +81,14 @@ source files. Use the Makefile to build the docs, like so:
    make builder
 where "builder" is one of the supported builders, e.g. html, latex or linkcheck.
 
-``
+```
 
 Now run the following command to generate HTML files for the documentation
-``
+
+```
 make html
 
-``
+```
 
 This will generate the HTML files in `build/html`. 
 

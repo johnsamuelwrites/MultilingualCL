@@ -1,6 +1,6 @@
-#MultilingualCL
+# MultilingualCL
 
 ## Documentation
 
 ## Building Documenation from Scratch
-Follow the instructions [here](README.md) to build documentation from scratch.
+Follow the instructions [here](build.md) to build documentation from scratch.
