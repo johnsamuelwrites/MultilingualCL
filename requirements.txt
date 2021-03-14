@@ -1,5 +1,2 @@
-markdown
-pyyaml
-Flask
 sphinx
 sphinx_rtd_theme
