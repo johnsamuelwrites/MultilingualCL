@@ -11,7 +11,7 @@ class LanguageTestSuite(unittest.TestCase):
     def setUp(self):
         pass
 
-    def test_basic_shexstatements(self):
+    def test_basic_language(self):
         l = Language("@1")
         l.add_name("en")
         l.add_name("en")
