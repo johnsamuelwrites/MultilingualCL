@@ -6,8 +6,10 @@
 import unittest
 
 from tests.languagetest import *
+from tests.modeltest import *
 
 if __name__ == '__main__':
     languagetests = LanguageTestSuite()
-    tests = unittest.TestSuite([languagetests])
+    modeltests = ModelTestSuite()
+    tests = unittest.TestSuite([languagetests, modeltests])
     unittest.main()
