@@ -16,7 +16,8 @@ class LanguageTestSuite(unittest.TestCase):
         l.add_name("en")
         l.add_name("en")
         l.add_name("English")
-        assert(l.get_all_names() == ['en', 'English'])
+        assert('en' in l.get_all_names())
+        assert('English' in l.get_all_names())
         assert(l.get_identifier("English") == "@1")
 
 
