@@ -1,0 +1,171 @@
+Créer/Nouveau:
+  Gestion de fichiers:
+    - créer fichier/nouveau fichier: touch nomfichier
+    - créer répertoire/nouveau répertoire: mkdir nomdossier
+  Gestion des utilisateurs:
+    - créer utilisateur/ajouter utilisateur: useradd nomutilisateur
+    - créer groupe/ajouter groupe: groupadd nomgroupe
+
+Supprimer/Éliminer:
+  Gestion de fichiers:
+    - supprimer fichier/éliminer fichier: rm nomfichier
+    - supprimer répertoire/éliminer répertoire: rmdir nomdossier
+  Gestion des utilisateurs:
+    - supprimer utilisateur/éliminer utilisateur: userdel nomutilisateur
+    - supprimer groupe/éliminer groupe: groupdel nomgroupe
+
+Modifier/Changer/Altérer:
+  Gestion de fichiers:
+    - déplacer/renommer: mv source destination
+    - copier: cp source destination
+    - modifier/altérer les permissions du fichier: chmod options nomfichier
+    - modifier/altérer le propriétaire du fichier: chown utilisateur:groupe nomfichier
+  Gestion des utilisateurs:
+    - modifier/changer utilisateur: usermod options nomutilisateur
+    - modifier/changer groupe: groupmod options nomgroupe
+
+Basculer/Changer d'utilisateur:
+  Gestion des utilisateurs:
+    - basculer/changer utilisateur: su nomutilisateur
+
+Exécuter/Lancer/Exécuter une commande:
+  Gestion des processus:
+    - exécuter/lancer une commande détachée du terminal: nohup commande &
+    - envoyer un processus en arrière-plan: commande &
+    - ramener un processus au premier plan: fg
+  Gestion des utilisateurs:
+    - exécuter/lancer une commande en tant que superutilisateur: sudo commande
+
+Lister/Afficher/Voir:
+  Gestion de fichiers:
+    - lister/afficher/voir les fichiers: ls
+    - lister/afficher/voir les fichiers en utilisant les couleurs: ls --color=auto
+    - afficher/voir les premières lignes: head nomfichier
+    - afficher/voir les dernières lignes: tail nomfichier
+    - chercher/rechercher dans un fichier: grep motif nomfichier
+    - information sur le fichier/afficher les informations du fichier: file nomfichier
+    - comparer/afficher les différences entre les fichiers: diff fichier1 fichier2
+    - compter le nombre de mots: wc nomfichier
+  Répertoire:
+    - afficher/voir le répertoire courant: pwd
+  Gestion des processus:
+    - lister/afficher/voir les processus: ps
+    - afficher/voir l'état du système: top
+    - afficher/voir les tâches en arrière-plan: jobs
+  Réseau:
+    - configuration de l'interface réseau: ifconfig
+    - configuration réseau (IPv4 et IPv6): ip
+    - statistiques réseau: netstat
+    - statistiques des sockets: ss
+    - recherche DNS: nslookup nomhôte
+    - nom de l'hôte: hostname
+  Informations système:
+    - nom du système: uname
+    - utilisation du disque: df
+    - estimation de l'utilisation de l'espace fichier: du
+    - utilisation de la mémoire: free
+    - temps de fonctionnement du système: uptime
+    - lister/afficher/voir les utilisateurs connectés actuellement: who
+    - activité de l'utilisateur actuel: w
+    - afficher/voir les derniers utilisateurs connectés: last
+    - historique des commandes: history
+  Informations matérielles:
+    - lister/afficher/voir les périphériques PCI: lspci
+    - lister/afficher/voir les périphériques USB: lsusb
+    - lister/afficher/voir les informations matérielles: lshw
+    - récupérer/afficher/voir les informations matérielles: dmidecode
+    - manipulation des paramètres du disque dur: hdparm
+    - informations SMART du disque dur: smartctl
+    - informations sur les capteurs système: sensors
+  Système de fichiers:
+    - lister/afficher/voir les systèmes de fichiers montés: mount
+    - démonter le système de fichiers: umount
+    - vérification de la cohérence du système de fichiers: fsck
+    - créer un système de fichiers: mkfs
+    - outil de partitionnement: fdisk
+    - partitionnement des disques: parted
+    - lister/afficher/voir les périphériques de bloc: lsblk
+    - informations sur les périphériques de bloc: blkid
+    - utilisation de l'espace disque: df
+    - estimation de l'utilisation de l'espace fichier: du
+
+Modifier/Changer/Altérer (synonyme de Modifier):
+  Permissions:
+    - changer/modifier/altérer les permissions du fichier: chmod options nomfichier
+    - changer/modifier/altérer le propriétaire du fichier: chown utilisateur:groupe nomfichier
+
+Télécharger/Transférer/Récupérer:
+  Réseau:
+    - télécharger/récupérer un fichier: wget URL
+    - transférer des données (URL): curl URL
+
+Connecter/Sécuriser:
+  Réseau:
+    - shell sécurisé: ssh utilisateur@hôte
+    - copie sécurisée: scp source destination
+    - protocole de transfert de fichiers: ftp
+
+Chercher/Rechercher/Localiser:
+  Gestion de fichiers:
+    - chercher/rechercher/localiser dans un fichier: grep motif nomfichier
+    - rechercher des fichiers: find chemin -name motif
+
+Compresser/Décompresser:
+  Archivage/Compression:
+    - créer/compresser une archive tar: tar -cvf archive.tar fichiers
+    - compresser avec gzip: gzip nomfichier
+    - décompresser/uncompresser un fichier gzip: gunzip nomfichier
+    - créer/compresser une archive zip: zip archive.zip fichiers
+    - extraire/décompresser une archive zip: unzip archive.zip
+
+Arrêter/Terminer:
+  Gestion des processus:
+    - tuer/terminer un processus: kill PID
+
+Autre:
+  Traitement de texte:
+    - concaténer: cat fichier1 fichier2
+    - traitement de texte (awk): awk 'motif { action }' nomfichier
+    - couper: cut -d délimiteur -f champs nomfichier
+    - coller: paste fichier1 fichier2
+    - trier: sort nomfichier
+    - supprimer les doublons: uniq nomfichier
+    - traduire des caractères: tr 'de' 'à' < nomfichier
+    - joindre: join fichier1 fichier2
+    - comparer/afficher les différences entre les fichiers: comm fichier1 fichier2
+
+Éditeurs de texte:
+  Éditeurs de texte:
+    - vi/vim
+    - nano
+    - emacs
+    - ed
+
+Planification des tâches:
+  Planification des tâches:
+    - cron
+    - at
+
+Surveillance du système:
+  Surveillance du système:
+    - rapporteur d'activité du système: sar
+    - état du système: top
+    - visionneuse de processus interactive: htop
+    - statistiques d'entrée/sortie: iostat
+    - statistiques de la mémoire virtuelle: vmstat
+    - statistiques multiprocesseur: mpstat
+    - utilisation des ressources: dstat
+    - surveillance des performances du système: nmon
+
+Services système:
+  Services système:
+    - gérer les services système: service, systemctl, scripts init.d
+
+Contrôle du système:
+  Contrôle du système:
+    - redémarrer: reboot
+    - arrêter: shutdown
+    - extinction: poweroff
+    - contrôle du système: systemctl, sysctl
+    - limites des processus et des descripteurs de fichiers: ulimit
+

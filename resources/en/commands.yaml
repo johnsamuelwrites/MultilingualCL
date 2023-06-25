@@ -1,0 +1,193 @@
+Create/Create New:
+  File Management:
+    - create file/new file: touch filename
+    - create directory/new directory: mkdir dirname
+  User Management:
+    - create user/add user: useradd username
+    - create group/add group: groupadd groupname
+
+Delete/Remove:
+  File Management:
+    - delete/remove file: rm filename
+    - delete/remove directory: rmdir dirname
+  User Management:
+    - delete/remove user: userdel username
+    - delete/remove group: groupdel groupname
+
+Modify/Change/Alter:
+  File Management:
+    - move/rename: mv source destination
+    - copy: cp source destination
+    - change/modify file permissions: chmod options filename
+    - change/modify file owner: chown user:group filename
+  User Management:
+    - modify/change user: usermod options username
+    - modify/change group: groupmod options groupname
+
+Switch/Change User:
+  User Management:
+    - switch/change user: su username
+
+Execute/Run/Run Command:
+  Process Management:
+    - execute/run command detached from the terminal: nohup command &
+    - send process to background: command &
+    - bring process to foreground: fg
+  User Management:
+    - execute/run command as superuser: sudo command
+
+List/Display/Show/View:
+  File Management:
+    - list/display/show files: ls
+    - list/display/show files using colors: ls --color=auto
+    - display/show head: head filename
+    - display/show tail: tail filename
+    - search/find in file: grep pattern filename
+    - file information/show file information: file filename
+    - compare/show differences between files: diff file1 file2
+    - word count: wc filename
+  Directory:
+    - display/show current directory: pwd
+  Process Management:
+    - list/display/show processes: ps
+    - display/show system status: top
+    - display/show background jobs: jobs
+  Network:
+    - network interface configuration: ifconfig
+    - network configuration (IPv4 and IPv6): ip
+    - network statistics: netstat
+    - socket statistics: ss
+    - DNS lookup: nslookup hostname
+    - hostname: hostname
+  System Information:
+    - system name: uname
+    - disk usage: df
+    - estimate file space usage: du
+    - memory usage: free
+    - system uptime: uptime
+    - list/display/show currently logged in users: who
+    - current user activity: w
+    - show/display/show last logged in users: last
+    - command history: history
+  Hardware Info:
+    - list/display/show PCI devices: lspci
+    - list/display/show USB devices: lsusb
+    - list/display/show hardware information: lshw
+    - retrieve/display/show hardware information: dmidecode
+    - hard disk parameter manipulation: hdparm
+    - SMART hard drive information: smartctl
+    - system sensors information: sensors
+  Filesystem:
+    - list/display/show mounted filesystems: mount
+    - unmount filesystem: umount
+    - file system consistency check: fsck
+    - create file system: mkfs
+    - partitioning tool: fdisk
+    - disk partitioning: parted
+    - list/display/show block devices: lsblk
+    - block device information: blkid
+    - disk space usage: df
+    - estimate file space usage: du
+
+Change/Modify/Alter:
+  Permissions:
+    - change/modify/alter file permissions: chmod options filename
+    - change/modify/alter file owner: chown user:group filename
+
+Download/Transfer/Retrieve:
+  Network:
+    - download/retrieve file: wget URL
+    - transfer data (URL): curl URL
+
+Connect/Secure:
+  Network:
+    - secure shell: ssh user@hostname
+    - secure copy: scp source destination
+    - file transfer protocol: ftp
+
+Search/Find/Locate:
+  File Management:
+    - search/find/locate in file: grep pattern filename
+    - find files: find path -name pattern
+
+Compress/Decompress:
+  Archive/Compression:
+    - create/compress tar archive: tar -cvf archive.tar files
+    - compress with gzip: gzip filename
+    - decompress/decompress gzip file: gunzip filename
+    - create/compress zip archive: zip archive.zip files
+    - extract/decompress zip archive: unzip archive.zip
+
+Kill/Terminate:
+  Process Management:
+    - kill/terminate process: kill PID
+
+Other:
+  Text Processing:
+    - concatenate: cat file1 file2
+    - text processing (awk): awk 'pattern { action }' filename
+    - cut: cut -d delimiter -f fields filename
+    - paste: paste file1 file2
+    - sort: sort filename
+    - remove duplicates: uniq filename
+    - translate characters: tr 'from' 'to' < filename
+    - join: join file1 file2
+    - compare/show differences between files: comm file1 file2
+
+Shell:
+  Shell Utilities:
+    - echo: echo message
+    - print/formatted message: printf format arguments
+    - read: read variable
+    - sleep: sleep seconds
+    - evaluate/evaluate expression: expr expression
+    - test/check condition: test condition
+    - process text file: cut, paste, tr, wc, head, tail
+    - tee: tee filename
+    - argument list: xargs
+    - search/find in file: grep pattern filename
+    - search/find and replace: sed 's/pattern/replacement/g' filename
+    - text processing (awk): awk 'pattern { action }' filename
+    - find files: find path -name pattern
+
+Package Management:
+  Package Management:
+    - package management (Debian): apt, apt-get, dpkg
+    - package management (RPM-based): yum, dnf, zypper
+    - package management (Arch): pacman
+
+Text Editors:
+  Text Editors:
+    - vi/vim
+    - nano
+    - emacs
+    - ed
+
+Job Scheduling:
+  Job Scheduling:
+    - cron
+    - at
+
+System Monitoring:
+  System Monitoring:
+    - system activity reporter: sar
+    - system status: top
+    - interactive process viewer: htop
+    - input/output statistics: iostat
+    - virtual memory statistics: vmstat
+    - multiprocessor statistics: mpstat
+    - resource usage: dstat
+    - system performance monitoring: nmon
+
+System Services:
+  System Services:
+    - manage system services: service, systemctl, init.d scripts
+
+System Control:
+  System Control:
+    - reboot: reboot
+    - shutdown: shutdown
+    - poweroff: poweroff
+    - system control: systemctl, sysctl
+    - process and file descriptor limits: ulimit
+
