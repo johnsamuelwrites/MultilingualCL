@@ -46,20 +46,11 @@ def parse_user_command(command_map, current_locale, user_input):
             #positionals = matching_command['positionals']
             if remaining: 
                 parsed_args.positional = remaining 
+                option_name = option['name']
 
         # Parse the user command
-        #parsed_args = parser.parse_args(user_input.split())
         return parsed_args
 
 
 
-
-# Example usage
-command_map_directory = "../resources/yaml"  # Specify the path to the reference YAML file
-command_map = load_command_map(command_map_directory)
-
-current_locale = "en_US"
-user_input = input("Enter the command: ")
-parsed_command = parse_user_command(command_map, current_locale, user_input)
-print(parsed_command)
 

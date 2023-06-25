@@ -2,7 +2,7 @@
 import os
 import yaml
 
-def load_command_map(directory):
+def load_command_map_from_directory(directory):
     """
     Load command map from YAML files in the specified directory.
 
@@ -21,3 +21,8 @@ def load_command_map(directory):
                 file_commands = yaml.safe_load(file)
                 command_map.update(file_commands)
     return command_map
+
+def load_command_map():
+    command_map_directory = "../resources/yaml"  
+    command_map = load_command_map_from_directory(command_map_directory)
+    return (command_map)

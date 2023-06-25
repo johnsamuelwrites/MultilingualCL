@@ -1,6 +1,9 @@
 import readline
 import difflib
 from termcolor import colored
+import locale
+from command_map import load_command_map
+from parser import parse_user_command
 
 HISTORY_FILE = ".repl_history"  # File to store command history
 
@@ -26,38 +29,29 @@ def highlight_match(text, match):
     highlighted_text = colored(match, "yellow")
     return text.replace(match, highlighted_text)
 
-def evaluate_command(command):
-    # TODO: Add your logic to evaluate the command here
+def evaluate_command(command, command_map, current_locale):
+    print(command)
+    parsed_command = parse_user_command(command_map, current_locale, command)
+    print(parsed_command)
+
     return "Result: " + command
 
 def repl():
     while True:
         try:
+            current_locale = locale.getlocale()[0]
+            command_map = load_command_map()
+
             command = input(colored(">>> ", "cyan"))  # Prompt in cyan color
             if command.strip() == "":
                 continue
 
             save_history()
 
-            # Autocorrection
-            suggestions = get_suggestions(command, ["help", "quit"])  # Example options
-            if suggestions:
-                suggestion = suggestions[0]
-                if suggestion != command: 
-                  corrected_command = input(colored(
-                      f"Did you mean '{highlight_match(suggestion, command)}'? [Y/n] ", "magenta"))
-                  if corrected_command.lower() == "y":
-                      command = suggestion
-
-            # Autocompletion
-            completer = readline.get_completer()
-            if completer:
-                completed_command = completer(command, 0)
-                if completed_command != command:
-                    command = completed_command
 
             # Evaluation
-            result = evaluate_command(command)
+            result = evaluate_command(command, command_map, current_locale)
+            print(result)
             print(colored(result, "green"))  # Print result in green color
 
         except (KeyboardInterrupt, EOFError):
