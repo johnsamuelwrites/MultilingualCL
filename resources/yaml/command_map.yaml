@@ -1,0 +1,107 @@
+git:
+  locales:
+    en_US:
+      names: [git]
+      options:
+        - name: --verbose
+          aliases: [-v]
+          has_arg: false
+          description: "Be more verbose"
+      subcommands:
+        - name: init
+          aliases: []
+          has_arg: false
+          description: "Initialize a new Git repository"
+        - name: add
+          aliases: []
+          has_arg: true
+          description: "Add file contents to the index"
+          options:
+            - name: --interactive
+              aliases: [-i]
+              has_arg: false
+              description: "Add files interactively"
+        - name: commit
+          aliases: []
+          has_arg: true
+          description: "Record changes to the repository"
+          options:
+            - name: --message
+              aliases: [-m]
+              has_arg: true
+              description: "Specify a commit message"
+        - name: push
+          aliases: []
+          has_arg: false
+          description: "Update remote refs along with associated objects"
+      positionals:
+        - name: remote
+          description: Name of the remote repository
+        - name: branch
+          description: Name of the branch
+    fr_FR:
+      names: [git]
+      options:
+        - name: --verbose
+          aliases: [-v]
+          has_arg: false
+          description: "Afficher plus de détails"
+        - name: --message
+          aliases: [-m]
+          has_arg: true
+          description: "Spécifier un message de commit"
+      subcommands:
+        - name: init
+          aliases: []
+          has_arg: false
+          description: "Initialiser un nouveau dépôt Git"
+        - name: add
+          aliases: []
+          has_arg: true
+          description: "Ajouter le contenu d'un fichier à l'index"
+          options:
+            - name: --interactive
+              aliases: [-i]
+              has_arg: false
+              description: "Ajouter les fichiers de manière interactive"
+        - name: commit
+          aliases: []
+          has_arg: true
+          description: "Enregistrer les modifications dans le dépôt"
+        - name: push
+          aliases: []
+          has_arg: false
+          description: "Mettre à jour les références distantes avec les objets associés"
+      positionals:
+        - name: dépôt
+          description: Nom du dépôt à distance 
+        - name: branch
+          description: Nom de la branche 
+  linux_command: "git {args}"
+
+ls:
+  locales:
+    en_US:
+      names: [ls]
+      options:
+        - name: -l
+          aliases: [--long]
+          has_arg: false
+          description: "Use a long listing format"
+        - name: -a
+          aliases: [--all]
+          has_arg: false
+          description: "Show hidden files as well"
+    fr_FR:
+      names: [ls]
+      options:
+        - name: -l
+          aliases: [--long]
+          has_arg: false
+          description: "Utiliser un format de liste longue"
+        - name: -a
+          aliases: [--all]
+          has_arg: false
+          description: "Afficher également les fichiers cachés"
+  linux_command: "ls {args}"
+
