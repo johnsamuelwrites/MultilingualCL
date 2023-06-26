@@ -1,6 +1,6 @@
-
 import os
 import yaml
+
 
 def load_command_map_from_directory(directory):
     """
@@ -17,12 +17,13 @@ def load_command_map_from_directory(directory):
     for filename in os.listdir(directory):
         if filename.endswith(".yaml"):
             file_path = os.path.join(directory, filename)
-            with open(file_path, 'r') as file:
+            with open(file_path, "r") as file:
                 file_commands = yaml.safe_load(file)
                 command_map.update(file_commands)
     return command_map
 
+
 def load_command_map():
-    command_map_directory = "../resources/yaml"  
+    command_map_directory = "../resources/yaml"
     command_map = load_command_map_from_directory(command_map_directory)
-    return (command_map)
+    return command_map

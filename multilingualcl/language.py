@@ -33,8 +33,7 @@ class LanguageMap:
         self.IDlanguageDict = {}
 
     def addLanguage(self, identifier, language):
-        if(type(language) == str and
-           type(identifier) == str):
+        if type(language) == str and type(identifier) == str:
             self.IDlanguageDict[identifier].add(language)
             self.languageIDDict[language] = identifier
         else:

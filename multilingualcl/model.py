@@ -4,10 +4,11 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 #
 
+
 class Command:
-    '''
-      Class for a command
-    '''
+    """
+    Class for a command
+    """
 
     def __init__(self, name, description=None, arguments=None):
         self.name = name
@@ -16,7 +17,7 @@ class Command:
 
 
 class Argument:
-    '''Command line argument'''
+    """Command line argument"""
 
     def __init__(self, short_name, long_name, datatype=None, values=None):
         self.short_name = short_name
@@ -25,23 +26,23 @@ class Argument:
         self.values = values
 
 
-class PositionalArgument (Argument):
-    '''Positional argument of a command or a subcommand'''
+class PositionalArgument(Argument):
+    """Positional argument of a command or a subcommand"""
 
     def __init__(self, short_name, long_name, datatype=None, count=1):
         super().__init__(short_name, long_name, datatype, None)
         self.count = count
 
 
-class OptionalArgument (Argument):
-    '''Optional argument of a command or a subcommand'''
+class OptionalArgument(Argument):
+    """Optional argument of a command or a subcommand"""
 
     def __init__(self, short_name, long_name, datatype=None, values=None):
         super().__init__(short_name, long_name, datatype, values)
 
 
-class SubCommand (PositionalArgument):
-    '''Subcommand'''
+class SubCommand(PositionalArgument):
+    """Subcommand"""
 
     def __init__(self, short_name, long_name):
         super().__init__(short_name, long_name)
