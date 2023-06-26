@@ -1,0 +1,94 @@
+{
+    "en_US": {
+        "create": {
+            "alias": [
+                "make"
+            ],
+            "option": [
+                "user",
+                "group",
+                "file",
+                "directory"
+            ]
+        },
+        "read": {
+            "alias": [
+                "show",
+                "print"
+            ],
+            "option": [
+                "user",
+                "date",
+                "group",
+                "process",
+                "file",
+                "directory"
+            ]
+        },
+        "update": {
+            "alias": [],
+            "option": [
+                "user",
+                "group",
+                "file",
+                "directory"
+            ]
+        },
+        "delete": {
+            "alias": [],
+            "option": [
+                "user",
+                "group",
+                "process",
+                "file",
+                "directory"
+            ]
+        },
+        "list": {
+            "alias": [],
+            "option": [
+                "user",
+                "memory",
+                "device",
+                "group",
+                "process",
+                "connection",
+                "file",
+                "directory"
+            ]
+        },
+        "compress": {
+            "alias": [],
+            "option": [
+                "file",
+                "directory"
+            ]
+        },
+        "decompress": {
+            "alias": [],
+            "option": [
+                "file",
+                "directory"
+            ]
+        },
+        "link": {
+            "option": [
+                "file",
+                "directory"
+            ]
+        },
+        "copy": {
+            "option": [
+                "file",
+                "directory"
+            ]
+        },
+        "rename": {
+            "option": [
+                "file",
+                "directory"
+            ]
+        }
+    }
+}
+

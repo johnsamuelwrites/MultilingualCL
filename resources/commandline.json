@@ -1,0 +1,141 @@
+{
+  "alias": {
+    "en_US": "alias"
+  },
+  "option": {
+    "en_US": "option"
+  },
+  "argument": {
+    "en_US": "argument"
+  },
+  "positionalargument": {
+    "en_US": "positional argument"
+  },
+  "shortform": {
+    "en_US": "short form"
+  },
+  "longform": {
+    "en_US": "long form"
+  },
+  "documentation": {
+    "en_US": "documentation"
+  },
+  "resources": {
+    "user_label": {
+      "en_US": ["user"]
+    },
+    "group_label": {
+      "en_US": ["group"]
+    },
+    "process_label": {
+      "en_US": ["process"]
+    },
+    "memory_label": {
+      "en_US": ["memory"]
+    },
+    "device_label": {
+      "en_US": ["device"]
+    },
+    "connection_label": {
+      "en_US": ["connection"]
+    },
+    "file_label": {
+      "en_US": ["file"]
+    },
+    "directory_label": {
+      "en_US": ["directory"]
+    },
+    "date_label": {
+      "en_US": ["date"]
+    }
+  },
+  "command": {
+    "en_US": {
+      "create": {
+        "alias": ["make"],
+        "option": [
+          "user",
+          "group",
+          "file",
+          "directory"
+        ]
+      },
+      "read": {
+        "alias": ["show", "print"],
+        "option": [
+          "user",
+          "date",
+          "group",
+          "process",
+          "file",
+          "directory"
+        ]
+      },
+      "update": {
+        "alias": [],
+        "option": [
+          "user",
+          "group",
+          "file",
+          "directory"
+        ]
+      },
+      "delete": {
+        "alias": [],
+        "option": [
+          "user",
+          "group",
+          "process",
+          "file",
+          "directory"
+        ]
+      },
+      "list": {
+        "alias": [],
+        "option": [
+          "user",
+          "memory",
+          "device",
+          "group",
+          "process",
+          "connection",
+          "file",
+          "directory"
+        ]
+      },
+      "compress": {
+        "alias": [],
+        "option": [
+          "file",
+          "directory"
+        ]
+      },
+      "decompress": {
+        "alias": [],
+        "option": [
+          "file",
+          "directory"
+        ]
+      },
+      "link": {
+        "option": [
+          "file",
+          "directory"
+        ]
+      },
+      "copy": {
+        "option": [
+          "file",
+          "directory"
+        ]
+      },
+      "rename": {
+        "option": [
+          "file",
+          "directory"
+        ]
+      }
+    }
+  }
+}
+
