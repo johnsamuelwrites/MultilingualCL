@@ -1,4 +1,4 @@
-from parser import parse_user_command
+from multilingualcl.parser import parse_user_command
 
 
 def obtain_command_from_translation(command_map, current_locale, user_input):

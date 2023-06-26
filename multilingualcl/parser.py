@@ -1,5 +1,5 @@
 import argparse
-from command_map import load_command_map
+from multilingualcl.command_map import load_command_map
 
 
 def parse_user_command(command_map, current_locale, user_input):

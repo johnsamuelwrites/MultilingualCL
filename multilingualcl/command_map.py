@@ -24,6 +24,13 @@ def load_command_map_from_directory(directory):
 
 
 def load_command_map():
-    command_map_directory = "../resources/yaml"
+    """
+    Loads a command map from the specified directory.
+
+    :return: A dictionary representing the command map.
+    """
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    command_map_directory = os.path.join(current_dir, "../resources/yaml")
+
     command_map = load_command_map_from_directory(command_map_directory)
     return command_map

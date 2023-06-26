@@ -3,8 +3,8 @@ import difflib
 from termcolor import colored
 import locale
 import subprocess
-from command_map import load_command_map
-from command import obtain_command_from_translation
+from multilingualcl.command_map import load_command_map
+from multilingualcl.command import obtain_command_from_translation
 
 HISTORY_FILE = ".repl_history"  # File to store command history
 
