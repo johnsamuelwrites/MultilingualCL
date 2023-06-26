@@ -28,8 +28,8 @@ def initialize():
 
 def get_suggestions(text, options):
     matches = difflib.get_close_matches(
-        text, options, n=5, cutoff=0.5
-    )  # Limit suggestions to 5 and set cutoff threshold
+        text, options, n=2, cutoff=0.5
+    )  # Limit suggestions to 2 and set cutoff threshold
     return matches
 
 

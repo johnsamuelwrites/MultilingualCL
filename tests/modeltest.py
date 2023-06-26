@@ -17,5 +17,5 @@ class ModelTestSuite(unittest.TestCase):
         c = Command("add", "addition of integers", [pa, oa])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

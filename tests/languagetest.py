@@ -16,10 +16,10 @@ class LanguageTestSuite(unittest.TestCase):
         l.add_name("en")
         l.add_name("en")
         l.add_name("English")
-        assert('en' in l.get_all_names())
-        assert('English' in l.get_all_names())
-        assert(l.get_identifier("English") == "@1")
+        assert "en" in l.get_all_names()
+        assert "English" in l.get_all_names()
+        assert l.get_identifier("English") == "@1"
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
