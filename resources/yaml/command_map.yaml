@@ -77,7 +77,7 @@ git:
           description: Nom du dépôt à distance 
         - name: branch
           description: Nom de la branche 
-  linux_command: "git {args}"
+  linux_command: "git"
 
 ls:
   locales:
@@ -93,15 +93,15 @@ ls:
           has_arg: false
           description: "Show hidden files as well"
     fr_FR:
-      names: [ls]
+      names: [af]
       options:
         - name: -l
-          aliases: [--long]
+          aliases: [-l, --longue]
           has_arg: false
           description: "Utiliser un format de liste longue"
         - name: -a
-          aliases: [--all]
+          aliases: [-t, --tous]
           has_arg: false
           description: "Afficher également les fichiers cachés"
-  linux_command: "ls {args}"
+  linux_command: "ls"
 
