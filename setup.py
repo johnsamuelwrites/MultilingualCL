@@ -30,6 +30,10 @@ setuptools.setup(
     install_requires=[
         'Markdown>=3.2.2',
         'pyyaml>=5.3.1',
+        'rich>=13.0',
     ],
-    python_requires='>=3.6',
+    extras_require={
+        'llm': ['ollama>=0.1'],
+    },
+    python_requires='>=3.8',
 )
